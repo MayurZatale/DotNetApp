@@ -9,6 +9,7 @@ public class UserService : IUserService{
         MySqlRepository repo = new MySqlRepository(); // DB file
         users = repo.GetAll();
         return users;
+        //return repo.getAll();
     }
 
     public User GetById(int id){

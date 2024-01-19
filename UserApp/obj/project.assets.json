@@ -1791,11 +1791,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Admin\\Desktop\\Class Work\\C#\\Usersproject\\UserApp\\UserApp.csproj",
+      "projectUniqueName": "C:\\Users\\Admin\\Desktop\\Krishna\\Dotnetrepo\\Usersproject\\UserApp\\UserApp.csproj",
       "projectName": "UserApp",
-      "projectPath": "C:\\Users\\Admin\\Desktop\\Class Work\\C#\\Usersproject\\UserApp\\UserApp.csproj",
+      "projectPath": "C:\\Users\\Admin\\Desktop\\Krishna\\Dotnetrepo\\Usersproject\\UserApp\\UserApp.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Admin\\Desktop\\Class Work\\C#\\Usersproject\\UserApp\\obj\\",
+      "outputPath": "C:\\Users\\Admin\\Desktop\\Krishna\\Dotnetrepo\\Usersproject\\UserApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",

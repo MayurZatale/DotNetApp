@@ -11,7 +11,7 @@ public class MySqlRepository{
         List<User> users = new List<User>();
 
         MySqlConnection conn = new MySqlConnection();
-        conn.ConnectionString=@"server=localhost; port=3307; user=root; password=Root123; database=advjava";
+        conn.ConnectionString=@"server=localhost; port=3306; user=root; password=password; database=dotnet";
 
         MySqlCommand cmd = new MySqlCommand();
         cmd.Connection = conn;
@@ -46,7 +46,7 @@ public class MySqlRepository{
         User user = new User();
 
         MySqlConnection conn = new MySqlConnection();
-        conn.ConnectionString=@"server=localhost; port=3307; user=root; password=root123; database=advjava";
+        conn.ConnectionString=@"server=localhost; port=3306; user=root; password=password; database=dotnet";
 
         MySqlCommand cmd = new MySqlCommand();
         cmd.Connection = conn;
@@ -83,7 +83,7 @@ public class MySqlRepository{
 
     public void Delete(int uid){
         MySqlConnection conn = new MySqlConnection();
-        conn.ConnectionString=@"server=localhost; port=3307; user=root; password=root123; database=advjava";
+        conn.ConnectionString=@"server=localhost; port=3306; user=root; password=password; database=dotnet";
 
         MySqlCommand cmd = new MySqlCommand();
         cmd.Connection = conn;
@@ -102,7 +102,7 @@ public class MySqlRepository{
 
     public void Insert(User user){
         MySqlConnection conn = new MySqlConnection();
-        conn.ConnectionString=@"server=localhost; port=3307; user=root; password=root123; database=advjava";
+        conn.ConnectionString=@"server=localhost; port=3306; user=root; password=password; database=dotnet";
         MySqlCommand cmd = new MySqlCommand();
         cmd.Connection = conn;
         cmd.CommandText="insert into users values("+user.userId+",'"+user.userName+"','"+user.userEmail+"','"+user.userAddress+"')";
@@ -120,7 +120,7 @@ public class MySqlRepository{
 
     public void Update(User user){
         MySqlConnection conn = new MySqlConnection();
-        conn.ConnectionString=@"server=localhost; port=3307; user=root; password=root123; database=advjava";
+        conn.ConnectionString=@"server=localhost; port=3306; user=root; password=password; database=dotnet";
         MySqlCommand cmd = new MySqlCommand();
         cmd.Connection = conn;
         cmd.CommandText="update users set name='"+user.userName+"', email='"+user.userEmail+"', address='"+user.userAddress+"' where id="+user.userId;

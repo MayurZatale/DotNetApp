@@ -13,10 +13,21 @@ public class HomeController : Controller
         _logger = logger;
     }
 
-    public IActionResult Index()
-    {
+    public IActionResult Index(){
         return View();
     }
+
+    [HttpPost]
+    public IActionResult Index(IFormCollection form)
+    {
+        var email=form["em"].ToString();
+        var pass=form["pass"].ToString();
+        if(email=="admin@gmail.com"&&pass=="admin123"){
+            return RedirectToAction("Index","User");
+        }
+        return RedirectToAction("Index","Home");
+    }
+
 
     public IActionResult Privacy()
     {
